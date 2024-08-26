@@ -3,6 +3,7 @@ package week_7.JHJ08;
 import java.util.*;
 public class PGS_모음사전 {
 
+
     static String [] data = { "A", "E", "I", "O", "U"};
     static ArrayList<String> list = new ArrayList<>();
 

@@ -2,6 +2,7 @@ package week_7.JHJ08;
 
 import java.util.*;
 
+
 public class PGS_전력망을둘로나누기 {
 
     static ArrayList <ArrayList<Integer>> graph;
