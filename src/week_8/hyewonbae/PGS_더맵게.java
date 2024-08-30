@@ -23,7 +23,7 @@ public class PGS_더맵게 {
         // count 초기화
         int count = 0;
 
-        // pq가 최소 2개 이상일 때 최소값이 K보다 작으면 반복 , 즉 pq의 최소값이 K면 종료        while(pq.size() > 1 && pq.peek() < K) {
+        // pq가 최소 2개 이상일 때 최소값이 K보다 작으면 반복 , 즉 pq의 최소값이 K면 종료
         while(pq.size() > 1 && pq.peek() < K) {
             int min = pq.poll();
             int min2 = pq.poll();

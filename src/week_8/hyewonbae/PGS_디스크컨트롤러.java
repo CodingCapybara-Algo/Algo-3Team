@@ -57,6 +57,7 @@ public class PGS_디스크컨트롤러 {
     }
 
     public static void main(String[] args) throws Exception {
+        // TEST CASE
         int[][] jobs = {{0,3}, {1,9}, {2,6}};
         int result = solution(jobs);
         System.out.println(result);
