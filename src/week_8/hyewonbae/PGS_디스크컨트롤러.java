@@ -12,6 +12,7 @@ import java.util.*;
 
 public class PGS_디스크컨트롤러 {
     static int solution(int[][] jobs) {
+        int answer = 0;
         int end = 0;        // 현재 시간
         int total = 0;      // 총 대기시간 합계
         int index = 0;      // 현재 작업 배열의 인덱스
@@ -51,8 +52,7 @@ public class PGS_디스크컨트롤러 {
             }
         }
 
-        // 소수점 이하는 버림 --> 정수형으로 변환
-        int answer = (int)(total / jobs.length);
+        answer = total / jobs.length;
         return answer;
     }
 
