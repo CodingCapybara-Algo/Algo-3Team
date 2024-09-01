@@ -2,6 +2,7 @@ package week_7.JHJ08;
 
 import java.util.*;
 
+
 public class PGS_피로도 {
 
     static boolean [] v; // 방문 확인
