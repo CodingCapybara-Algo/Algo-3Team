@@ -11,17 +11,17 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 
 public class PGS_같은숫자는싫어 {
-    public static int[] solution(int []arr) {
+    public static int[] solution(int[] arr) {
         ArrayDeque<Integer> stack = new ArrayDeque<>();
         stack.add(arr[0]); //초기화
-        for(int a:arr) {
-            if(stack.peekLast() != a) //마지막 원소와 다른 값이면
+        for (int a : arr) {
+            if (stack.peekLast() != a) //마지막 원소와 다른 값이면
                 stack.add(a); //추가
         }
 
         int[] answer = new int[stack.size()];
         int idx = 0;
-        for(Integer a:stack) {
+        for (Integer a : stack) {
             answer[idx] = a;
             idx++;
         }
@@ -29,7 +29,7 @@ public class PGS_같은숫자는싫어 {
     }
 
     public static void main(String[] args) {
-        int[] answer = solution(new int[] {1,1,3,3,0,1,1});
+        int[] answer = solution(new int[]{1, 1, 3, 3, 0, 1, 1});
         System.out.println(Arrays.toString(answer));
     }
 
